@@ -68,6 +68,7 @@ header h1{
     color: #fff;
     font-weight: 900;
     text-align: center;
+    font-family:'Times New Roman', Times, serif
 }
 
 .container-icon img{
@@ -116,7 +117,7 @@ img{
 }
 
 .item:hover{
-    box-shadow: 0 10px 20px rgba(124, 16, 16, 0.2);
+    box-shadow: 0 10px 20px rgba(94, 13, 13, 0.2);
 }
 
 
@@ -143,10 +144,9 @@ img{
 
 .info-product{
     padding: 15px 30px;
-    line-height: 2;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 0;
     justify-content: space-between;
 }
 
@@ -200,16 +200,24 @@ img{
 @media (max-width: 480px) {
     header {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         padding: 10px;
+        gap: 20px;
     }
+
+
+
     figure {
         max-width: 90%; /* Ajusta aún más el ancho en pantallas muy pequeñas */
         max-height: 150px;
     }
 
+    .info-product{
+        font-size: 14px;
+    }
+
     figure figcaption {
-        font-size: 0.8rem; /* Ajusta aún más el tamaño de la fuente en pantallas muy pequeñas */
+        font-size: 0.7rem; /* Ajusta aún más el tamaño de la fuente en pantallas muy pequeñas */
     }
     .item img{
         height: 120px;
